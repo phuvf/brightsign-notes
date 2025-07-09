@@ -89,6 +89,7 @@ To edit the NTP server, use `ifconfig time-server time.brightsignnetwork.com`. E
 ```bash
 ifconfig time-server time.brightsignnetwork.com # BrightSign default
 ifconfig time-server clock.fopnet.com  # Old F1 NTP server, no longer available
+ifconfig time-server track-ntp.fix8group.com # FIX8Group F1 NTP server
 ifconfig time-server 172.166.214.56 # You can use an IP as well, but it's better to use a domain name
 ```
 
