@@ -1,8 +1,11 @@
 # How to update the NTP server on a BrightSign using SSH
 
-Note: In this guide I'm going to use `192.168.1.135` as an example for the BrightSign device's IP address. Change it to your device's actual IP address.
+Last updated: 9th July 2025
 
-I'm assuming the Diagnostic Web Server is enabled on the BrightSign device. If you don't have access to the web interface, you'll need to enable that first.
+> [!NOTE]  
+> In this guide I'm going to use `192.168.1.135` as an example for the BrightSign device's IP address. Change it to your device's actual IP address.
+>
+> I'm also assuming the Diagnostic Web Server is enabled on the BrightSign device. If you don't have access to the web interface, you'll need to enable that first.
 
 ## 1. Enable SSH on the BrightSign device
 
@@ -69,7 +72,7 @@ Interface:      eth0
 Host
  Host Name:      BrightSign-R3E6D8001339
  mDNS Host Name: BrightSign-R3E6D8001339.local
- Time server:    172.166.214.56
+ Time server:    time.brightsignnetwork.com
  Proxy Bypass:   <none>
 
 BSN
