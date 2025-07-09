@@ -56,34 +56,14 @@ Interface:      eth0
  Type:           Wired
  Link:           Yes
  Configuration:  DHCP
- Client ID:      BrightSign:R3E6D8001339
- MAC:            90:ac:3f:0a:0b:2e
- Current IP:     192.168.1.135
- Netmask:        255.255.255.0
- Broadcast:      192.168.1.255
- Gateway:        192.168.1.1
- IP6 Address:    fd2b:df65:2c67:36c:92ac:3fff:fe0a:b2e/64
- IP6 Address:    fe80::92ac:3fff:fe0a:b2e/64
- Metric:         202
- Domains:        localdomain
- DNS:            192.168.1.1
- Shape inbound:  No
+
+ # other stuff we're not interested in here, then...
 
 Host
  Host Name:      BrightSign-R3E6D8001339
  mDNS Host Name: BrightSign-R3E6D8001339.local
  Time server:    time.brightsignnetwork.com
  Proxy Bypass:   <none>
-
-BSN
- Crash URL:      https://crashes.brightsignnetwork.com/bs/crashdump
- Error URL:
- Recovery URL:
-
-Other
- Http Port:
- BrightSign Ssh Port: 22
-
 ```
 To edit the NTP server, use `ifconfig time-server time.brightsignnetwork.com`. Examples:
 ```bash
@@ -106,12 +86,9 @@ Result: OK
 
 Checking DNS servers...
 PASS: At least one DNS server is valid
-Checking DNS server (cached)...
-PASS: DNS servers responded to 100% of potentially cached requests
-Checking DNS server (hopefully not cached)...
-PASS: DNS servers responded to 100% of hopefully uncached requests
-Checking Internet connectivity...
-PASS: PING 10/10: 87990/88411/88949us
+
+ # other stuff we're not interested in here, then...
+
 Checking HTTP...
 PASS: External IP is 31.111.73.67
 Checking time server...
