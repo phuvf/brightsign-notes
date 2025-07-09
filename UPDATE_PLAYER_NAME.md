@@ -13,10 +13,9 @@ Finally, you'll need a program that can make API calls with Digest Authenticatio
 - In a browser, navigate to `http://<unit-ip-address>`. Replace `<unit-ip-address>` with the actual IP address of your BrightSign unit.
 - Go to the `Control` tab and set (or change, or delete) the DWS password using the `Set Password` option.
 
-No password is required to change the unit name, but it one is set, you'll need to know it.
+No password is required to change the unit name, but if one is set, you'll need to know it.
 
 ## 2. Load up Postman and read the registry data
-
 
 > [!NOTE]
 > Reading the registry data is not required to rename a unit, but it will help you confirm the current unit name and ensure that the LDWS API is working correctly.
@@ -44,7 +43,9 @@ You should see a response with the registry data in JSON format, similar to:
                 },
                 "networking": {
                     "bbhf": "undefined",
-                    ...
+                    
+                    "other_data_here_we_don't_care_about": "other values",
+
                     "ul": "",
                     "un": "BS23-CCTV",
                     "unm": "unitNameOnly",
