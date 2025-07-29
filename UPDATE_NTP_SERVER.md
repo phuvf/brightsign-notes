@@ -107,3 +107,18 @@ Probably best to reboot the device again to ensure everything is working correct
 ## 7. Disable SSH (optional)
 If you no longer need SSH access, you can disable it now.
 
+
+> [!NOTE] 
+> ## An update on this method from BrightSign support:
+> Hi Nick,
+>
+> What you have should work *temporarily* but if the player is registered to a BSN.cloud network and communicating with BSN.cloud, the Supervisor will eventually detect the mismatch between current player settings and its stored stored configuration and restore its stored settings to the player.
+>
+> To get the player's current settings to "trickle back up" and I update the BSN.cloud settings, you need to
+> - Enable Property Lock on the player
+> - Make the change to the player's configuration (and restore the normal autorun)
+> - Disable Property Lock on the player
+>
+> When the player first goes from locked to unlocked Properties BSN.cloud will accept the player's current settings as its new stored settings.
+>
+> The other potential override to the settings change is if the player goes into Network Recovery due to crashing repeatedly or being instructed to Reprovision from the remote DWS. In this case the player's assigned setup from its Provision entry will be applied. 
